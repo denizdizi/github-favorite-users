@@ -1,0 +1,13 @@
+<div class="user-list">
+  <h2>Users</h2>
+  <ul>
+    <li *ngFor="let user of userList">
+      <img [src]="user.avatar_url" alt="Kullanıcı Avatarı" />
+      <p>{{ user.login }}</p>
+      <a [routerLink]="['/user', user.login]">View Profile</a>
+      <button *ngIf="!user.isFav" (click)="addUserToFavorites(user)">Add To Favorites</button>
+      <button style="background-color: #bb2d3b!important;" *ngIf="user.isFav"
+        (click)="removeUserFromFavorites(user)">Remove From Favorites</button>
+    </li>
+  </ul>
+</div>

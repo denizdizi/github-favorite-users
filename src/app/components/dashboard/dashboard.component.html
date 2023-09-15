@@ -1,0 +1,11 @@
+<div class="container">
+  <!-- Kullanıcı Arama Bileşeni -->
+  <app-user-search (getQueryString)=searchByQueryString($event)></app-user-search>
+
+  <!-- Kullanıcı Listesi Bileşeni -->
+  <app-user-list *ngIf="showUsers" [userList]="userListData" (addToFavorites)=addToFavorites($event)
+    (removeFromFavorites)=removeFromFavorites($event)></app-user-list>
+
+  <!-- Favori Kullanıcılar Bileşeni -->
+  <app-user-favorites *ngIf="showFavorites"></app-user-favorites>
+</div>

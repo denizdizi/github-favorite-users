@@ -1,0 +1,21 @@
+.user-profile {
+  text-align: center;
+}
+
+.user-profile h2 {
+  font-size: 1.5rem;
+}
+
+.user-profile img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 1rem auto;
+}
+
+.user-profile h3 {
+  font-size: 1.2rem;
+}
+
+.user-profile p {
+  margin: 0.5rem 0;
+}

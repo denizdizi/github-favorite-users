@@ -1,0 +1,45 @@
+.user-list {
+  text-align: center;
+}
+
+.user-list h2 {
+  font-size: 1.5rem;
+}
+
+.user-list ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.user-list li {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+  min-width: 200px;
+}
+
+.user-list img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.user-list a {
+  display: block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.user-list button {
+  padding: 0.5rem 1rem;
+  background-color: #28A745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

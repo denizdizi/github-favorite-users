@@ -1,0 +1,11 @@
+<div class="user-favorites">
+  <h2>Favorites</h2>
+  <ul>
+    <li *ngFor="let user of favoriteUsers">
+      <img [src]="user.avatar_url" alt="Kullanıcı Avatarı" />
+      <p>{{ user.login }}</p>
+      <a [routerLink]="['/user', user.login]">View Profile</a>
+      <button (click)="removeFromFavorites(user)">Remove From Favorites</button>
+    </li>
+  </ul>
+</div>

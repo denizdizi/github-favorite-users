@@ -1,0 +1,16 @@
+<div class="user-profile">
+  <h2>User's Profile</h2>
+  <div *ngIf="user">
+    <img [src]="user.avatar_url" alt="Kullanıcı Avatarı" />
+    <h3>{{ user.login }}</h3>
+    <p>ID: {{ user.id }}</p>
+    <p>Name: {{ user.name }}</p>
+    <p>Bio: {{ user.bio }}</p>
+    <p>Blog: <a [href]="user.blog" target="_blank">{{ user.blog }}</a></p>
+    <p>Company: {{ user.company }}</p>
+    <p>Followers: {{ user.followers }}</p>
+    <p>Following: {{ user.following }}</p>
+    <p>Public Repositories: {{ user.public_repos }}</p>
+    <a [routerLink]="['/', ]">&lt; Back to Home Page</a>
+  </div>
+</div>
