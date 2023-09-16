@@ -15,19 +15,19 @@ Projenin yerel ortamınıza klonlamak ve çalıştırmak için aşağıdaki adı
 
 1. Repoyu klonlayın:
 
--> git clone https://github.com/denizdizi/github-favorite-users.git
+`git clone https://github.com/denizdizi/github-favorite-users.git`
 
 2. Proje klasörüne gidin:
 
--> cd github-favorite-users
+`cd github-favorite-users`
 
 3. Gerekli bağımlılıkları yükleyin:
 
--> npm install
+`npm install`
 
 4. Uygulamayı çalıştırın:
 
--> ng serve
+`ng serve`
 
 5. Tarayıcınızda http://localhost:4200/ adresine gidin.
 
