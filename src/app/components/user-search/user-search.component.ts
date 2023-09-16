@@ -8,7 +8,6 @@ import { GithubService } from '../../services/github.service';
 })
 export class UserSearchComponent {
   searchQuery: string = '';
-  searchResults: any[] = [];
   @Output() getQueryString = new EventEmitter<{ query: string }>();
 
   constructor(private githubService: GithubService) { }

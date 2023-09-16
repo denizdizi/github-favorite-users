@@ -8,7 +8,6 @@ import { GithubService } from '../../services/github.service';
 })
 export class DashboardComponent implements OnInit {
   searchQuery: string = '';
-  count: number = 0;
   userListData: any[] = [];
   favoriteUsers: any[] = this.githubService.getFavorites();
 
@@ -26,7 +25,7 @@ export class DashboardComponent implements OnInit {
       return; // Boş arama yapılamaz.
     }
 
-    // Subscribe ile searchUsers servisine gidilir.
+    // searchUsers servisine subscribe olunur.
     this.githubService.searchUsers(this.searchQuery).subscribe((data: any) => {
       this.userListData = data.items;
       this.showFavorites = false;
